@@ -3,7 +3,7 @@ title: "Wasmer 1.0がリリースされたので、ベンチマークを取っ�
 emoji: "⏱"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Rust", "WebAssembly"]
-published: false
+published: true
 ---
 
 先日、WebAssemblyランタイム Wasmer (https://wasmer.io/) のバージョン1.0がリリースされました。
