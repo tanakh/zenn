@@ -3,7 +3,7 @@ title: "Rustでゲームボーイエミュレーターを書いた"
 emoji: "🎮"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Rust", "Emulator"]
-published: false
+published: true
 ---
 
 RustでTGB-Rというゲームボーイエミュレーターを書きました。
