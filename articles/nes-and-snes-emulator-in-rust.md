@@ -3,7 +3,7 @@ title: "Rustでファミコンとスーパーファミコンのエミュレー�
 emoji: "🎮"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Rust", "Emulator"]
-published: false
+published: true
 ---
 
 [ゲームボーイエミュレーター](gb-emulator-in-rust)、[ゲームボーイアドバンスエミュレーター](gba-emulator-in-rust)に続いて、Rustでファミコンエミュレーター["Sabicom"](https://github.com/tanakh/sabicom)とスーパーファミコンエミュレーター["Super Sabicom"](https://github.com/tanakh/super-sabicom)を書きました。
