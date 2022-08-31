@@ -3,7 +3,7 @@ title: "自作のRust製エミュレーターをWebブラウザーで動くよ�
 emoji: "🎮"
 type: "tech"
 topics: ["wasm", "emulator", "rust"]
-published: false
+published: true
 ---
 
 最近Rustで[ちょい](https://zenn.dev/tanakh/articles/gb-emulator-in-rust)[ちょい](https://zenn.dev/tanakh/articles/gba-emulator-in-rust)[書いてた](https://zenn.dev/tanakh/articles/nes-and-snes-emulator-in-rust)エミュレーターをWebブラウザーで動くようにしました。
