@@ -19,7 +19,6 @@
   "homepage": "https://github.com/tanakh/zenn#readme",
   "dependencies": {
     "npm": "^8.5.2",
-    "zenn-cli": "^0.1.107"
-  },
-  "devDependencies": {}
+    "zenn-cli": "^0.1.134"
+  }
 }
