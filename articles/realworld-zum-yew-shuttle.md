@@ -3,7 +3,7 @@ title: "YewとaxumとShuttleで RealWorld example を書いてみた"
 emoji: "😺"
 type: "tech"
 topics: ["Rust", "Yew", "axum", "shuttle", "realworld"]
-published: false
+published: true
 ---
 
 フルスタックエンジニアになるために普段触らないWebフロントエンドの練習をしようと思い、[RealWorld example apps](https://github.com/gothinkster/realworld) というMediumクローンのような現実のWebアプリに即したサンプルアプリを実装してみました。
