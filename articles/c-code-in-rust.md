@@ -3,7 +3,7 @@ title: "C言語のコードをRustの中に書くライブラリを作った"
 emoji: "🦀"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Rust", "C"]
-published: false
+published: true
 ---
 
 C言語のコードをRustの中に書けるようにするライブラリ [cinrs](https://github.com/tanakh/cinrs) を作りました。
