@@ -9,6 +9,7 @@ published: false
 C言語のコードをRustの中に書けるようにするライブラリ [cinrs](https://github.com/tanakh/cinrs) を作りました。
 
 https://github.com/tanakh/cinrs
+https://crates.io/crates/cinrs
 
 こんな風にCのコードをRustの中に書いて、Rustから呼び出したりできます。
 
