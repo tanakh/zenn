@@ -192,6 +192,11 @@ error: expected expression, found ';' (at line 3, column 20 of the C source)
 
 これは、proc-macroにトークンの部分スパンを通知させる方法がないことから来る制限ですが、nightlyには `proc_macro_span` というフィーチャーがあって、その機能を使えばうまくやれるので、`cinrs` の `nightly` フィーチャーを有効にしたうえで、nightly toolchainを用いてコンパイルすれば、的確なエラーメッセージを表示できます。
 
+```toml:Cargo.toml
+[dependencies]
+cinrs = { version = "0.1", features = ["nightly"] }
+```
+
 ```sh
 $ cargo +nightly build 
 error: expected expression, found ';'
@@ -203,7 +208,7 @@ error: expected expression, found ';'
 
 https://github.com/rust-lang/rust/issues/54725
 
-これがデフォルトで使えるようになるとだいぶ使い勝手が良くなると思うので、この機能が一刻も早くstableになるように皆さんも一緒にお祈り下さい。
+これがデフォルトで使えるようになるとだいぶ使い勝手が良くなると思うので、この機能が一刻も早くstableになるように皆さんも一緒にお祈りして下さい。
 
 また、`include_c99!` など、ファイルパスを指定してファイルをCコードとして取り込むマクロも用意されています（Rustの `std::include!` マクロのC版のような雰囲気）。
 
@@ -257,7 +262,7 @@ include_c99!("foo.c");
 
 ![alt text](/images/cinrs-benchmarks.png)
 
-ベンチマークスイートは [The Computer Language Benchmaks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html) から標準的な機能で書かれたものをいくつか、古典的なベンチマークをいくつか、それと自前のマイクロベンチマークからなります。ベンチマーク全体の Geometric mean は、cinrs / gcc で 0.927、cinrs / clang で 1.071 となっており、Cコンパイラと比べてもほぼ遜色のない、あるいはむしろ速いものもあるという結果になりました。これはかなり良い結果だと思います。
+ベンチマークスイートは [The Computer Language Benchmaks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html) からCの標準的な機能で書かれたものをいくつかと、古典的なベンチマークをいくつか、それと自前のマイクロベンチマークで構成しています。ベンチマーク全体の Geometric mean は、cinrs / gcc で 0.927、cinrs / clang で 1.071 となっており、Cコンパイラと比べてもほぼ遜色のない、あるいはむしろ速いものもあるという結果になりました。これはかなり良い結果だと思います。
 
 statemachine というベンチが顕著に遅いですが、これは `goto` を自由に使うようなコードで、Rustには `goto` がないので、これを実現するために、cinrs ではそのようなコードはステートマシンとしてコンパイルしています。なので、冗長なコードになり、コンパイラの最適化も効きづらくなっていると思われますが、それでも2倍強の実行時間で収まっています。なお、後方への `goto` に限っては、Rustでもラベル付き `loop` の `break` という形で比較的自然に、かつ最適化の効きやすい形で記述できるので、（実際にはほかのベンチでも`goto`は使われているものの）重いペナルティーとなっているものは少ないです。
 
