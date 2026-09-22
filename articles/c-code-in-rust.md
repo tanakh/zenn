@@ -1,5 +1,5 @@
 ---
-title: "C言語のコードをRustの中に書くライブラリを作った"
+title: "C言語のコードをRustの中に書けるライブラリを作った"
 emoji: "🦀"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Rust", "C"]
