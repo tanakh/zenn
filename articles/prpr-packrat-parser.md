@@ -3,7 +3,7 @@ title: "prpr: Rust 向けのシンプルで高速な Parser generator"
 emoji: "👅"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Rust", "parser", "PEG"]
-published: false
+published: true
 ---
 
 [prpr (PackRat Parser in Rust)](https://github.com/tanakh/prpr) という Rust 向けの新しい Parser generator ライブラリを作りました。
