@@ -8,6 +8,8 @@ published: false
 
 [prpr (PackRat Parser in Rust)](https://github.com/tanakh/prpr) という Rust 向けの新しい Parser generator ライブラリを作りました。
 
+https://crates.io/crates/prpr
+
 https://github.com/tanakh/prpr
 
 詳しい使い方を書いたドキュメントがありますので、使ってみたいと思った方はぜひこちらをご覧になってください。
