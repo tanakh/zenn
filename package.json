@@ -19,6 +19,6 @@
   "homepage": "https://github.com/tanakh/zenn#readme",
   "dependencies": {
     "npm": "^11.19.1",
-    "zenn-cli": "^0.5.4"
+    "zenn-cli": "^0.5.8"
   }
 }
